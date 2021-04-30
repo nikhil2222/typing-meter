@@ -1,0 +1,270 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    padding-top: 0px;
+    width: 100px;
+    cursor :pointer;
+    margin: 0px 0px;
+    vertical-align: middle;
+
+
+}
+.masthead {
+    padding: 1em 2em;
+    background: rgb(0,212,255);
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,108,121,1) 29%, rgba(2,0,36,1) 100%); color: white;
+}
+
+.masthead h1 {
+    display: inline;
+    padding-bottom: 15px;
+}
+
+.intro {
+    padding: 2em 2em;
+    color: #ffffff;
+    background: #429890;
+}
+.Rules{
+    position: absolute;
+    right:250px;
+    top:165px;
+    height: 60px;
+    width: 120px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius:20px ;
+    outline: none;
+    cursor : pointer;
+    transition: background-color 5s ,border-radius 2s ,color 2s;
+    
+}
+
+.Rules:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: yellow;
+    opacity: 1; 
+
+
+}
+
+
+
+.intro p,
+.test-area {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.test-area {
+    margin-bottom: 4em;
+    padding: 0 2em;
+}
+
+.test-wrapper {
+    border: 10px solid grey;
+    border-radius: 10px;
+}
+
+#origin-text {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: #ededed;
+}
+
+#origin-text p {
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.test-wrapper {
+    height: 200%;
+    display: flex;
+}
+
+.test-wrapper textarea {
+    flex: 1;
+}
+
+.meta {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#reset {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 250px;
+    color: white;
+    border-radius: 10px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,175,1) 48%, rgba(252,176,69,1) 100%);
+
+}
+
+#reset:hover {
+    color: white;
+     background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,79,29,1) 48%, rgba(252,176,69,1) 100%);
+
+}
+
+.Best{
+    position: absolute;
+    font-family: cursive;
+    text-align: center;
+    right: 150px;
+    top: 380px;
+    width: 250px;
+    height: 150px;
+    background: rgb(0,212,255);
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(121,9,76,0.6044350845807073) 71%, rgba(2,0,36,0.5316059529280462) 100%);
+
+
+}
+.img1{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    right: 150px;
+    top : 280px;
+}
+
+.Next{
+     position: absolute;
+      background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); right: 150px;
+     top: 570px;
+     width: 250px;
+     height:70px;
+     border-radius: 30px;
+     color: black;
+     transition: all 3s;
+     opacity: 0;
+
+}
+
+.Next:hover{
+    
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(145,253,29,1) 48%, rgba(252,176,69,1) 100%);
+}
+
+
